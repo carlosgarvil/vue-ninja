@@ -38,5 +38,6 @@
     align-items: center;
     border-radius: 15px;
     color: white;
+    font-size: 1.5rem;
 }
 </style>

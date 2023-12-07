@@ -23,6 +23,7 @@ export default {
       this.isPlaying = false
       this.showResults = true
       this.score = reactionTime
+      document.getElementById('play_btn').innerText = 'Play Again'
     }
   }
 }
@@ -32,7 +33,7 @@ export default {
 <template>
   <h1>Ninja Vue</h1>
   <div>
-    <button @click="start" :disabled="isPlaying">Play</button>
+    <button @click="start" id="play_btn" :disabled="isPlaying">Play</button>
   </div>
   <Block v-if="isPlaying" :delay="delay" @end="endGame"></Block>
  <Results v-if="showResults" :score="score"></Results>
